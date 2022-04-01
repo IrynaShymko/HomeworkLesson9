@@ -1,0 +1,2 @@
+String url; String firstName; String surname; String login; String password;
+https://seleniumui.moderntester.pl/iframes.php; Jack; Jackson; JackLogin; JackPassword

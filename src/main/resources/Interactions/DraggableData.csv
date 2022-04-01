@@ -1,0 +1,2 @@
+String url; int x1; int y1; int x2; int y2; int x3; int y3 ; int x4; int y4;
+https://seleniumui.moderntester.pl/draggable.php; 450; -60; 0; 260; -225; -130; -225; 130
