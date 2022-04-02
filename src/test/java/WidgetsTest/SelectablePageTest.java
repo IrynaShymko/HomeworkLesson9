@@ -14,14 +14,12 @@ public class SelectablePageTest extends TestBase {
     @Tag("SelectablePage")
     @ParameterizedTest
     @CsvFileSource(files = "src/main/resources/WidgetsData/SelectablePageData.csv", delimiter = ';', numLinesToSkip = 1)
-    public void selectData(String url, String value, String index) throws InterruptedException {
+    public void selectData(String url, String value, int index) throws InterruptedException {
         driver.get(url);
         SelectablePage selectablePage = new SelectablePage(driver);
-        selectablePage.selectSpeed();
-//        selectablePage.selectTitle();
-
-
-
-
+        selectablePage.selectSpeed()
+                .selectFile(value)
+                .selectNumber(index)
+                .selectTitle();
     }
 }
