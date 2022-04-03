@@ -11,8 +11,8 @@ import org.slf4j.LoggerFactory;
 public class ResizableTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("ResizableTest.class");
 
-    @Tag("Basic")
-    @Tag("Form")
+    @Tag("Interactions")
+    @Tag("Resizable")
     @ParameterizedTest
     @CsvFileSource(files = "src/main/resources/Interactions/ResizableData.csv", delimiter = ';', numLinesToSkip = 1)
     public void resizeWindow(String url, int x1, int y1, int x2, int y2, int x3, int y3) {
