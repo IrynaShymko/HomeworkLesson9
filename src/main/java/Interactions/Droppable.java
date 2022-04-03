@@ -15,12 +15,11 @@ public class Droppable {
     private By dropElement = By.xpath("//div[@id='droppable']");
     private By dragAndDropConfirmationMessage = By.xpath("//div[@id='droppable']/p");
 
-    public WebElement dragAndDropDroppable() {
+    public void dragAndDropDroppable() {
         WebElement fromElement = driver.findElement(dragElement);
         WebElement toElement = driver.findElement(dropElement);
         Actions action = (new Actions(driver)).dragAndDrop(fromElement, toElement);
         action.perform();
-        return toElement;
     }
 
     public String  getDragAndDropConfirmationMessage(){

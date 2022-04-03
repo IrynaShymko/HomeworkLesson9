@@ -3,7 +3,6 @@ package Interactions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class Selectable {
@@ -22,13 +21,12 @@ public class Selectable {
         return driver.findElement(message).getText();
     }
 
-    public Selectable clickRows() {
+    public void clickRows() {
         Actions action = (new Actions(driver));
         action.keyDown(Keys.LEFT_CONTROL).build().perform();
         driver.findElement(row1).click();
         driver.findElement(row3).click();
         driver.findElement(row4).click();
         action.keyUp(Keys.LEFT_CONTROL).build().perform();
-        return this;
     }
 }

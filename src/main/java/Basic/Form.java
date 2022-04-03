@@ -111,7 +111,7 @@ public class Form {
         return driver.findElement(validationMessage).getText();
     }
 
-    public Form fillForm(String firstName, String lastName, String email, String command1, String command2, File file) {
+    public void fillForm(String firstName, String lastName, String email, String command1, String command2, File file) {
         fillFirstName(firstName)
                 .fillFirstName(firstName)
                 .fillLastName(lastName)
@@ -123,7 +123,6 @@ public class Form {
                 .selectContinent()
                 .selectSeleniumCommands(command1, command2)
                 .uploadFile(file);
-        return this;
     }
 
 }

@@ -1,4 +1,4 @@
-package InteractionsTest;
+package Common.InteractionsTest;
 
 import Common.TestBase;
 import Interactions.Draggable;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 public class DraggableTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("DraggableTest.class");
 
-    @Tag("Basic")
+    @Tag("Interactions")
     @Tag("Draggable")
     @ParameterizedTest
     @CsvFileSource(files = "src/main/resources/Interactions/DraggableData.csv", delimiter = ';', numLinesToSkip = 1)

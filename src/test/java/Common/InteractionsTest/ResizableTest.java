@@ -1,4 +1,4 @@
-package InteractionsTest;
+package Common.InteractionsTest;
 
 import Common.TestBase;
 import Interactions.Resizable;

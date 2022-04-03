@@ -1,4 +1,4 @@
-package InteractionsTest;
+package Common.InteractionsTest;
 
 import Common.TestBase;
 import Interactions.Selectable;
@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class SelectableTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("SelectableTest.class");
 
-    @Tag("Basic")
+    @Tag("Interactions")
     @Tag("Selectable")
     @ParameterizedTest
     @CsvFileSource(files = "src/main/resources/Interactions/Selectable.csv", delimiter = ';', numLinesToSkip = 1)

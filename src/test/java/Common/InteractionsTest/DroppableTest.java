@@ -1,4 +1,4 @@
-package InteractionsTest;
+package Common.InteractionsTest;
 
 import Common.TestBase;
 import Interactions.Droppable;
@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class DroppableTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("DroppableTest.class");
-    @Tag("Basic")
+    @Tag("Interactions")
     @Tag("Droppable")
     @ParameterizedTest
     @CsvFileSource(files = "src/main/resources/Interactions/DroppableData.csv", delimiter = ';', numLinesToSkip = 1)

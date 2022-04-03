@@ -2,6 +2,7 @@ package WidgetsTest;
 
 import Common.TestBase;
 import Widgets.ModalDialogPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.slf4j.Logger;
@@ -13,7 +14,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class ModalDialogPageTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("ModalDialogPageTest.class");
-
+    @Tag("Widgets")
+    @Tag("ModalDialog")
     @ParameterizedTest
     @MethodSource("Common.DataProviders#setNewUser")
     public void createNewUser(String url, String name, String email, String password) {

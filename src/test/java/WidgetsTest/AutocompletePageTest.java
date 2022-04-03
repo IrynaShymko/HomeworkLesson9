@@ -26,6 +26,6 @@ public class AutocompletePageTest extends TestBase {
         String text = autocompletePage.getTextFromSearchField();
         logger.info("Choice is: "+ choice);
         logger.info("Text in search field is: "+ text);
-        assertThat("Text in search field does not match with choise value", text, equalTo(choice));
+        assertThat("Text in search field does not match with choice value", text, equalTo(choice));
     }
 }

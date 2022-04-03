@@ -1,4 +1,4 @@
-package InteractionsTest;
+package Common.InteractionsTest;
 
 import Common.TestBase;
 import Interactions.SortablePage;
@@ -14,7 +14,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class SortablePageTest extends TestBase {
-    //private static Logger logger = LoggerFactory.getLogger("SortablePageTest.class");
+    private static Logger logger = LoggerFactory.getLogger("SortablePageTest.class");
     private Integer[] data = {1, 2, 3, 4, 5, 6, 7};
     private String url = "https://seleniumui.moderntester.pl/sortable.php";
     private By valuesList = By.xpath("//ul[@id='sortable']/li");

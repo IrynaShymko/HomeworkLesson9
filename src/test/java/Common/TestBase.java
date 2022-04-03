@@ -1,6 +1,5 @@
 package Common;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -28,13 +27,12 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //WebDriverWait wait = new WebDriverWait(driver, 12);
         logger.info("Window is maximized");
     }
 
-//    @AfterEach
-//    void tearDown() {
-//        driver.quit();
-//        logger.info("Driver closed properly");
-//    }
+    @AfterEach
+    void tearDown() {
+        driver.quit();
+        logger.info("Driver closed properly");
+    }
 }
