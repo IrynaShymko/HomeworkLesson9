@@ -5,12 +5,14 @@ import Common.TestBase;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
 public class TablePageTest extends TestBase {
+
     private static Logger logger = LoggerFactory.getLogger("TablePageTest.class");
     private By tableBy = By.xpath("//table");
 
@@ -24,3 +26,4 @@ public class TablePageTest extends TestBase {
         table.showInfoAboutMountainsByStateAndHeight("Switzerland", 4000);
     }
 }
+
