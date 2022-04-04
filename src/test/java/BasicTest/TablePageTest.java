@@ -11,13 +11,13 @@ import org.slf4j.LoggerFactory;
 
 
 public class TablePageTest extends TestBase {
-    private static Logger logger = LoggerFactory.getLogger("IframePageTest.class");
+    private static Logger logger = LoggerFactory.getLogger("TablePageTest.class");
     private By tableBy = By.xpath("//table");
 
     @Tag("Basic")
     @Tag("Table")
     @Test
-    public void navigateToTable() {
+    public void shouldShowChosenInfoFromTable() {
         driver.get("https://seleniumui.moderntester.pl/");
         WebElement tableElement = driver.findElement(tableBy);
         Table table = new Table(tableElement, driver);
