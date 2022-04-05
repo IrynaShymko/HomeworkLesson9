@@ -1,4 +1,4 @@
-package Common.InteractionsTest;
+package InteractionsTest;
 
 import Common.TestBase;
 import Interactions.Selectable;
