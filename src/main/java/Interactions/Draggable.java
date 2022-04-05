@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Draggable {
-    WebDriver driver;
+    private WebDriver driver;
 
     public Draggable(WebDriver driver) {
         this.driver = driver;

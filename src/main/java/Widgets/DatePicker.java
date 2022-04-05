@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 
 public class DatePicker {
-    WebDriver driver;
+    private WebDriver driver;
 
     public DatePicker(WebDriver driver) {
         this.driver = driver;

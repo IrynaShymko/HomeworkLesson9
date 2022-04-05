@@ -7,7 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AlertPage {
-    WebDriver driver;
+    private WebDriver driver;
+
     public AlertPage(WebDriver driver) {
         this.driver = driver;
     }

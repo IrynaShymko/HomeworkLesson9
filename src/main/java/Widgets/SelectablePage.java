@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 public class SelectablePage {
-    WebDriver driver;
+    private WebDriver driver;
 
     public SelectablePage(WebDriver driver) {
         this.driver = driver;

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AccordionPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     public AccordionPage(WebDriver driver) {
         this.driver = driver;

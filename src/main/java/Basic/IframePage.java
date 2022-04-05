@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Random;
 
 public class IframePage {
-    WebDriver driver;
+    private WebDriver driver;
     File screenshot;
     public IframePage(WebDriver driver) {
         this.driver = driver;

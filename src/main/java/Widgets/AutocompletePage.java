@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 public class AutocompletePage {
-    WebDriver driver;
+    private WebDriver driver;
 
     public AutocompletePage(WebDriver driver) {
         this.driver = driver;

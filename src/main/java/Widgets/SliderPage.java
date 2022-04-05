@@ -10,7 +10,8 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 
 public class SliderPage {
-    WebDriver driver;
+    private WebDriver driver;
+
     public SliderPage(WebDriver driver) {
         this.driver = driver;
     }

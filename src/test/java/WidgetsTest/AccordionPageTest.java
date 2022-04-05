@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 public class AccordionPageTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("AccordionPageTest.class");
 
-    @Tag("Basic")
+    @Tag("Widgets")
     @Tag("Accordion")
     @ParameterizedTest
     @ValueSource(strings ="https://seleniumui.moderntester.pl/accordion.php")

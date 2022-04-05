@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class SortablePage {
-    WebDriver driver;
+    private WebDriver driver;
     public SortablePage(WebDriver driver) {
         this.driver = driver;
     }

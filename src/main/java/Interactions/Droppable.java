@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class Droppable {
-    WebDriver driver;
+    private WebDriver driver;
 
     public Droppable(WebDriver driver) {
         this.driver = driver;

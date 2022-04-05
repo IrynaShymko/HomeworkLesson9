@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Selectable {
-    WebDriver driver;
+    private WebDriver driver;
 
     public Selectable(WebDriver driver) {
         this.driver = driver;

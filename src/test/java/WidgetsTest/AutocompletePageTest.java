@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class AutocompletePageTest extends TestBase {
     private static Logger logger = LoggerFactory.getLogger("AutocompletePageTest.class");
 
-    @Tag("Basic")
+    @Tag("Widgets")
     @Tag("Autocomplete")
     @ParameterizedTest
     @CsvFileSource(files = "src/main/resources/WidgetsData/AutocompleteData.csv", delimiter = ';', numLinesToSkip = 1)

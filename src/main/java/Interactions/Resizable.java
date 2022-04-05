@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class Resizable {
-    WebDriver driver;
+    private WebDriver driver;
 
     public Resizable(WebDriver driver) {
         this.driver = driver;

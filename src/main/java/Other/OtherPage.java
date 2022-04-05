@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class OtherPage {
-    WebDriver driver;
+    private WebDriver driver;
 
     public OtherPage(WebDriver driver) {
         this.driver = driver;
